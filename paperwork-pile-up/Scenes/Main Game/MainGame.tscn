@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://csjps8lxnu0ca"]
+
+[ext_resource type="Script" uid="uid://bahqedb5mbann" path="res://Scenes/Main Game/PaperGenerator.gd" id="1_05760"]
+[ext_resource type="PackedScene" uid="uid://cwrxs5iyfgfn" path="res://Prefabs/Paperwork/paperwork.tscn" id="2_6i3jj"]
+[ext_resource type="PackedScene" uid="uid://c3fdp1lk2y3na" path="res://Scenes/HeadsUpDisplay/HUD.tscn" id="3_lnk01"]
+
+[node name="Node2D" type="Node2D" unique_id=32596228]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=575870706]
+
+[node name="PaperGenerator" type="Node2D" parent="." unique_id=1781288101]
+script = ExtResource("1_05760")
+paper_prefab = ExtResource("2_6i3jj")
+
+[node name="Control" parent="." unique_id=1686241282 instance=ExtResource("3_lnk01")]
+offset_top = -324.0
+offset_bottom = -324.0
