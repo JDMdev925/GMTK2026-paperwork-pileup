@@ -10,12 +10,12 @@ func _ready() -> void:
 	GenerateNewPaper()
 
 
-func CoinFlip() -> bool:
+func CoinFlip() -> int:
 	var coin : int = randi_range(0, 2)
 	if coin == 2:
-		return true
+		return 1
 	else:
-		return false
+		return 0
 
 
 func GenerateNewPaper() -> void:
@@ -27,16 +27,18 @@ func GenerateNewPaper() -> void:
 		DetermineStartingConditions(new_paper)
 
 func DetermineStartingConditions(paper : PaperClass) -> void:
-	if CoinFlip() == true:
+	if CoinFlip() == 0:
 		paper.paper_process = PaperClass.PROCESS.FILE
 		paper.unix_date = randf_range(current_date - past_year, current_date)
+		paper.staple = CoinFlip()
 	else:
 		paper.paper_process = PaperClass.PROCESS.SHRED
 		paper.unix_date = randf_range(current_date - past_year, current_date) - past_year
-	print(Time.get_datetime_dict_from_unix_time(paper.unix_date))
-	paper.staple = CoinFlip()
+		paper.staple = 0
+	
+
 	paper.stamp = CoinFlip()
 	paper.signature = CoinFlip()
-	print("PAPER: ", paper.paper_process, ", ", paper.staple, ", ", paper.stamp, ", ", paper.signature)
+	print("PAPER: ", PaperClass.PROCESS.keys()[paper.paper_process], ", ", paper.staple, ", ", paper.stamp, ", ", paper.signature)
 	paper.PaperSetup()
 	
