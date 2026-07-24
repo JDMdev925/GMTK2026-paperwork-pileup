@@ -12,4 +12,6 @@ enum PROCESS{
 @export var staple : bool = false
 @export var stamp : bool = false
 @export var signature : bool = false
+@export var unix_date : float = 0
+@export var overload : int = 0
 @export var paper_process : PROCESS = PROCESS.FILE

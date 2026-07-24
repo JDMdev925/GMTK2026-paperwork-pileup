@@ -12,4 +12,16 @@ func _process(delta: float) -> void:
 
 
 func _on_staple_button_pressed() -> void:
-	$PaperGenerator.get_child(0).TempUpdate()
+	$"../PaperGenerator".get_child(0).AddStaple()
+
+func _on_file_paper_button_pressed() -> void:
+	$"../PaperGenerator".get_child(0).FilePaper()
+
+func _on_shred_paper_button_pressed() -> void:
+	$"../PaperGenerator".get_child(0).ShredPaper()
+
+func _on_signature_button_pressed() -> void:
+	$"../PaperGenerator".get_child(0).AddSignature()
+
+func _on_stamp_button_pressed() -> void:
+	$"../PaperGenerator".get_child(0).AddStamp()

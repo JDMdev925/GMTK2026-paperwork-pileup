@@ -2,7 +2,78 @@
 
 [ext_resource type="Script" uid="uid://dl1fgvif1c7yp" path="res://Prefabs/Paperwork/PaperObject.gd" id="1_rq53d"]
 
+[sub_resource type="Animation" id="Animation_rq53d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jnhoc"]
+resource_name = "paper_filed"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(600, -45), Vector2(1200, -45)]
+}
+
+[sub_resource type="Animation" id="Animation_u1q1d"]
+resource_name = "paper_shred"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(2, 1, 2, 1),
+"update": 0,
+"values": [Vector2(600, -45), Vector2(600, 300), Vector2(600, 300), Vector2(600, 600)]
+}
+
+[sub_resource type="Animation" id="Animation_3hbn3"]
+resource_name = "paper_slide_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.3, 1),
+"update": 0,
+"values": [Vector2(0, -45), Vector2(600, -45)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u1q1d"]
+_data = {
+&"RESET": SubResource("Animation_rq53d"),
+&"paper_filed": SubResource("Animation_jnhoc"),
+&"paper_shred": SubResource("Animation_u1q1d"),
+&"paper_slide_in": SubResource("Animation_3hbn3")
+}
+
 [node name="Paperwork" type="Node2D" unique_id=648659818]
+scale = Vector2(0.77040225, 0.77040225)
 script = ExtResource("1_rq53d")
 
 [node name="Paper BG" type="ColorRect" parent="." unique_id=1652873518]
@@ -40,3 +111,8 @@ offset_top = 162.0
 offset_right = -36.0
 offset_bottom = 297.0
 color = Color(0.5019608, 1, 1, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=639853574]
+libraries/ = SubResource("AnimationLibrary_u1q1d")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
