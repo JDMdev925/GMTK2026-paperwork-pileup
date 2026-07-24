@@ -52,5 +52,5 @@ func ShredPaper() -> void:
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "paper_filed" or anim_name == "paper_shred":
-		self.get_parent().GenerateNewPaper()
+		MainManager.UpdateScore(self)
 		queue_free()

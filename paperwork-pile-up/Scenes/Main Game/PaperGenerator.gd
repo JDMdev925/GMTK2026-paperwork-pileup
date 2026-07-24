@@ -5,8 +5,10 @@ extends Node2D
 var past_year : float = 34214400
 
 func _ready() -> void:
-	GenerateNewPaper()
+	MainManager.RegisterNode("PaperGenerator", self)
 	current_date = Time.get_unix_time_from_system()
+	GenerateNewPaper()
+
 
 func CoinFlip() -> bool:
 	var coin : int = randi_range(0, 2)
