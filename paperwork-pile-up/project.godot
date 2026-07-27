@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 MainManager="*uid://ceg8ntuum01l5"
+AudioController="*uid://bqoscvbrikacs"
 
 [display]
 

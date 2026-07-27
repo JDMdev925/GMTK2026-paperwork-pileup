@@ -19,7 +19,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jnhoc"]
 resource_name = "paper_filed"
-length = 1.5
+length = 1.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -35,7 +35,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_u1q1d"]
 resource_name = "paper_shred"
-length = 1.5
+length = 1.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -76,6 +76,9 @@ _data = {
 scale = Vector2(0.77040225, 0.77040225)
 script = ExtResource("1_rq53d")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=639853574]
+libraries/ = SubResource("AnimationLibrary_u1q1d")
+
 [node name="Paper BG" type="ColorRect" parent="." unique_id=1652873518]
 anchors_preset = 8
 anchor_left = 0.5
@@ -112,7 +115,12 @@ offset_right = -36.0
 offset_bottom = 297.0
 color = Color(0.5019608, 1, 1, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=639853574]
-libraries/ = SubResource("AnimationLibrary_u1q1d")
+[node name="Label" type="Label" parent="." unique_id=1859923460]
+offset_left = 90.86162
+offset_top = -297.24725
+offset_right = 221.86162
+offset_bottom = -274.24725
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Date: 10/10/1010"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

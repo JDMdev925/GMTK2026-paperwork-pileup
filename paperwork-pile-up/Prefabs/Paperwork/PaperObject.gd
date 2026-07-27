@@ -3,6 +3,8 @@ extends PaperClass
 
 
 func PaperSetup() -> void:
+	var datetime : Dictionary = Time.get_datetime_dict_from_unix_time(unix_date)
+	$Label.text = "Date: " + str(datetime["day"]) + "/" + str(datetime["month"]) + "/" + str(datetime["year"])
 	$AnimationPlayer.play("paper_slide_in")
 	
 	if staple == 1:

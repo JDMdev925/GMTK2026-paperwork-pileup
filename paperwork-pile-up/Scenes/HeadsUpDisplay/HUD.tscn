@@ -23,6 +23,7 @@ offset_top = 27.0
 offset_right = -7.0
 offset_bottom = 104.0
 grow_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "STAPLER"
 
 [node name="Signature Button" type="Button" parent="." unique_id=350100782]
@@ -35,6 +36,7 @@ offset_top = 523.0
 offset_right = -11.0
 offset_bottom = 631.0
 grow_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "SIGNATURE"
 
 [node name="Stamp Button" type="Button" parent="." unique_id=211130597]
@@ -47,6 +49,7 @@ offset_top = 522.0
 offset_right = 553.0
 offset_bottom = 632.0
 grow_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "STAMP"
 
 [node name="File Paper Button" type="Button" parent="." unique_id=1493757247]
@@ -59,6 +62,7 @@ offset_top = 68.0
 offset_right = 518.0
 offset_bottom = 491.0
 grow_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "FILE 
 PAPER"
 
@@ -72,6 +76,7 @@ offset_top = 553.0
 offset_right = 384.0
 offset_bottom = 613.0
 grow_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "SHRED PAPER"
 
 [node name="Side Panel" type="ColorRect" parent="." unique_id=160671826]
@@ -86,6 +91,15 @@ offset_left = 387.0
 offset_right = 397.0
 offset_bottom = 648.0
 color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=727297233]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 102.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 64
+text = "30"
 
 [connection signal="pressed" from="Staple Button" to="." method="_on_staple_button_pressed"]
 [connection signal="pressed" from="Signature Button" to="." method="_on_signature_button_pressed"]

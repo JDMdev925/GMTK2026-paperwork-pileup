@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bk6gvl1o2aw6w"]
+
+[ext_resource type="Script" uid="uid://bkbdvmp1en0rg" path="res://Scenes/Results/Results.gd" id="1_4a5tm"]
+
+[node name="Control" type="Control" unique_id=482696896]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4a5tm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2384422]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(0.51138675, 0.3089693, 0.09277011, 1)
+
+[node name="Text1" type="Label" parent="." unique_id=748033464]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.0
+offset_top = -147.0
+offset_right = 78.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "Score"
+
+[node name="Score" type="Label" parent="." unique_id=592085740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -83.0
+offset_right = 33.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "000"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cx6qsye6nyp71"
+path="res://.godot/imported/click_003.ogg-dd62acab40d5260886ac4f8bb6e45bfe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Scenes/HeadsUpDisplay/HUD assets/HUD audio/click_003.ogg"
+dest_files=["res://.godot/imported/click_003.ogg-dd62acab40d5260886ac4f8bb6e45bfe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

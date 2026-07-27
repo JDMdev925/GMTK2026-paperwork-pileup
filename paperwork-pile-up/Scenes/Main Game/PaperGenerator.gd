@@ -27,7 +27,7 @@ func GenerateNewPaper() -> void:
 		DetermineStartingConditions(new_paper)
 
 func DetermineStartingConditions(paper : PaperClass) -> void:
-	if CoinFlip() == 0:
+	if randi_range(0, 1) == 0:
 		paper.paper_process = PaperClass.PROCESS.FILE
 		paper.unix_date = randf_range(current_date - past_year, current_date)
 		paper.staple = CoinFlip()

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://capycqu4ht1th"]
+
+[ext_resource type="Script" uid="uid://xrch1gikk2mh" path="res://Scenes/Main Menu/MenuScript.gd" id="1_wp7ex"]
+
+[node name="Control" type="Control" unique_id=197771242]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wp7ex")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1664426007]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 650.0
+color = Color(0.9901119, 0.7353164, 0.6086887, 1)
+
+[node name="Button" type="Button" parent="." unique_id=1899778592]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 307.0
+offset_right = 649.0
+offset_bottom = 338.0
+text = "PLAY"
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
