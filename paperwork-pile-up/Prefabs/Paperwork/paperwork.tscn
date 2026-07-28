@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwrxs5iyfgfn"]
 
 [ext_resource type="Script" uid="uid://dl1fgvif1c7yp" path="res://Prefabs/Paperwork/PaperObject.gd" id="1_rq53d"]
+[ext_resource type="Texture2D" uid="uid://b08vkqevi1wrv" path="res://Prefabs/Paperwork/Paperwork assets/paperwork.png" id="2_jnhoc"]
 
 [sub_resource type="Animation" id="Animation_rq53d"]
 length = 0.001
@@ -79,48 +80,39 @@ script = ExtResource("1_rq53d")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=639853574]
 libraries/ = SubResource("AnimationLibrary_u1q1d")
 
-[node name="Paper BG" type="ColorRect" parent="." unique_id=1652873518]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -250.5
-offset_top = -323.5
-offset_right = 250.5
-offset_bottom = 323.5
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[node name="Paperwork" type="Sprite2D" parent="." unique_id=149338003]
+position = Vector2(1.2980232, 0)
+scale = Vector2(0.5936718, 0.59367186)
+texture = ExtResource("2_jnhoc")
 
 [node name="Paper Clip" type="ColorRect" parent="." unique_id=1200698364]
-offset_left = -238.0
-offset_top = -311.0
-offset_right = -173.0
-offset_bottom = -246.0
+offset_left = -218.0679
+offset_top = -315.41965
+offset_right = -159.65688
+offset_bottom = -257.00864
 color = Color(0.5019608, 1, 1, 1)
 
 [node name="Paper Stamp" type="ColorRect" parent="." unique_id=1924638862]
-offset_left = 33.0
-offset_top = 164.0
-offset_right = 228.0
-offset_bottom = 299.0
+offset_left = 38.940697
+offset_top = 181.72325
+offset_right = 190.80942
+offset_bottom = 286.8631
 color = Color(0.5019608, 1, 1, 1)
 
 [node name="Paper Signature" type="ColorRect" parent="." unique_id=303222920]
-offset_left = -231.0
-offset_top = 162.0
-offset_right = -36.0
-offset_bottom = 297.0
+offset_left = -197.51112
+offset_top = 179.1272
+offset_right = -47.517334
+offset_bottom = 282.96906
 color = Color(0.5019608, 1, 1, 1)
 
 [node name="Label" type="Label" parent="." unique_id=1859923460]
-offset_left = 90.86162
-offset_top = -297.24725
-offset_right = 221.86162
-offset_bottom = -274.24725
+offset_left = 61.007095
+offset_top = -295.9493
+offset_right = 192.0071
+offset_bottom = -272.9493
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
 text = "Date: 10/10/1010"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

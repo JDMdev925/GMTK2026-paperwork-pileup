@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="68.791664mm"
+   height="68.791664mm"
+   viewBox="0 0 68.791664 68.791664"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="stamper.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:export-filename="stamper.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.2110686"
+     inkscape:cx="133.41965"
+     inkscape:cy="143.14346"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Bump"
+       id="filter1696"
+       x="-0.019995584"
+       y="-0.05874045"
+       width="1.0399912"
+       height="1.1174809">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="0.01"
+         result="blur1"
+         id="feGaussianBlur1693" />
+      <feColorMatrix
+         in="blur1"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -12.6911 -9.02141 -8.40979 1 0 "
+         result="colormatrix1"
+         id="feColorMatrix1693" />
+      <feColorMatrix
+         in="colormatrix1"
+         type="luminanceToAlpha"
+         result="colormatrix2"
+         id="feColorMatrix1694" />
+      <feComposite
+         in2="blur1"
+         operator="arithmetic"
+         k2="1"
+         k3="17.26"
+         result="composite1"
+         id="feComposite1694" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.31"
+         result="blur2"
+         id="feGaussianBlur1694" />
+      <feSpecularLighting
+         lighting-color="rgb(255,255,255)"
+         surfaceScale="5.42522"
+         specularConstant="0.718475"
+         specularExponent="12"
+         result="lighting"
+         id="feSpecularLighting1694">
+        <feDistantLight
+           azimuth="184"
+           elevation="43"
+           id="feDistantLight1694" />
+      </feSpecularLighting>
+      <feFlood
+         flood-color="rgb(35,7,7)"
+         flood-opacity="1"
+         result="flood"
+         id="feFlood1694" />
+      <feComposite
+         in="lighting"
+         in2="blur1"
+         operator="arithmetic"
+         k3="1"
+         k2="1"
+         result="composite2"
+         id="feComposite1695" />
+      <feBlend
+         in2="SourceGraphic"
+         mode="normal"
+         result="blend"
+         id="feBlend1695" />
+      <feComposite
+         in="blend"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite1696" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1832" />
+      <feGaussianBlur
+         id="feGaussianBlur1832"
+         in="fbSourceGraphic"
+         stdDeviation="0.01"
+         result="blur1" />
+      <feColorMatrix
+         id="feColorMatrix1833"
+         in="blur1"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -12.6911 -9.02141 -8.40979 1 0 "
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix1834"
+         in="colormatrix1"
+         type="luminanceToAlpha"
+         result="colormatrix2" />
+      <feComposite
+         id="feComposite1834"
+         in2="blur1"
+         operator="arithmetic"
+         k2="1"
+         k3="17.26"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur1834"
+         in="composite1"
+         stdDeviation="0.11"
+         result="blur2" />
+      <feSpecularLighting
+         id="feSpecularLighting1834"
+         lighting-color="rgb(255,255,255)"
+         surfaceScale="2.49267"
+         specularConstant="0.615836"
+         specularExponent="9"
+         result="lighting">
+        <feDistantLight
+           id="feDistantLight1834"
+           azimuth="189"
+           elevation="44" />
+      </feSpecularLighting>
+      <feFlood
+         id="feFlood1834"
+         flood-color="rgb(35,7,7)"
+         flood-opacity="1"
+         result="flood" />
+      <feComposite
+         id="feComposite1835"
+         in="lighting"
+         in2="blur1"
+         operator="arithmetic"
+         k3="1"
+         k2="1"
+         result="composite2" />
+      <feBlend
+         id="feBlend1835"
+         in2="fbSourceGraphic"
+         mode="normal"
+         result="blend" />
+      <feComposite
+         id="feComposite1836"
+         in="blend"
+         in2="fbSourceGraphic"
+         operator="in"
+         k2="1"
+         result="composite3" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#2d150e;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4.6;stroke-dashoffset:25.0961;fill-opacity:1;stroke-opacity:1"
+       d="M 34.162256 0.12919108 A 34.162258 34.162258 0 0 0 5.4244751 15.819706 L 5.4244751 52.763188 A 34.162258 34.162258 0 0 0 34.162256 68.453703 A 34.162258 34.162258 0 0 0 63.416284 51.818542 L 63.416284 16.764351 A 34.162258 34.162258 0 0 0 34.162256 0.12919108 z M 0.12919108 32.485356 A 34.162258 34.162258 0 0 0 0 34.291447 A 34.162258 34.162258 0 0 0 0.12919108 36.097538 L 0.12919108 32.485356 z " />
+    <path
+       style="fill:#26120c;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-miterlimit:4.6;stroke-dashoffset:25.0961;stroke-opacity:1"
+       d="m 63.378353,16.809439 c 1.33194,1.778693 2.745191,3.383346 4.446322,4.93738 0.454798,0.829093 0.34741,1.466588 0.05137,2.08281 l -1.404925,1.015418 c -0.347218,0.220855 -0.509096,0.59616 -0.468858,1.139896 l 0.228121,16.548408 c -0.05601,0.576731 -0.01115,0.80781 0.363134,1.198369 l 1.133642,1.182932 c 0.611233,0.864054 0.513365,1.574788 0,2.195685 -1.750503,1.289492 -3.142236,3.081261 -4.439801,5.004866 z"
+       id="path2"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:#26120c;fill-opacity:1;stroke:none;stroke-width:0.204968;stroke-linecap:round;stroke-miterlimit:4.6;stroke-dashoffset:25.0961;stroke-opacity:1"
+       d="m 5.4245162,15.842823 c -1.33194,1.868163 -2.745191,3.553532 -4.44632199,5.185736 -0.454798,0.870797 -0.34741,1.540359 -0.05137,2.187578 l 1.40492499,1.066494 c 0.347218,0.231965 0.509096,0.626148 0.468858,1.197234 l -0.228121,17.380813 c 0.05601,0.605741 0.01115,0.848443 -0.363134,1.258648 l -1.133642,1.242435 c -0.61123299,0.907517 -0.51336499,1.654001 0,2.30613 1.750503,1.354355 3.142236,3.236252 4.439801,5.256617 z"
+       id="path3"
+       sodipodi:nodetypes="ccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2176px;line-height:122.936px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#26120c;fill-opacity:1;stroke:none;stroke-width:1.11692;stroke-linecap:round;stroke-miterlimit:4.6;stroke-dasharray:none;stroke-dashoffset:25.0961;stroke-opacity:1;filter:url(#filter1696)"
+       x="60.735687"
+       y="42.055599"
+       id="text3"
+       transform="scale(1.0154866,0.98474956)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2176px;line-height:122.936px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;stroke:none;stroke-width:1.11692;stroke-dasharray:none;stroke-opacity:1"
+         x="60.735687"
+         y="42.055599">STAMP</tspan></text>
+  </g>
+</svg>

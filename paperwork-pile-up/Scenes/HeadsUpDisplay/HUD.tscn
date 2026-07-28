@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://c3fdp1lk2y3na"]
 
 [ext_resource type="Script" uid="uid://crjipkc41ll2i" path="res://Scenes/HeadsUpDisplay/HudManager.gd" id="1_x2vhc"]
+[ext_resource type="Texture2D" uid="uid://bw123d7pfbqfj" path="res://Prefabs/Paperwork/Paperwork assets/stamper.png" id="2_ecg5a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lnk01"]
 
 [node name="Control" type="Control" unique_id=1686241282]
 layout_mode = 3
@@ -44,13 +47,15 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 409.0
-offset_top = 522.0
-offset_right = 553.0
-offset_bottom = 632.0
+offset_left = 416.0
+offset_top = 508.0
+offset_right = 676.0
+offset_bottom = 768.0
 grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
 mouse_default_cursor_shape = 2
-text = "STAMP"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lnk01")
+icon = ExtResource("2_ecg5a")
 
 [node name="File Paper Button" type="Button" parent="." unique_id=1493757247]
 layout_mode = 1
